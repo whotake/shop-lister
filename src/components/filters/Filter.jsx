@@ -4,7 +4,7 @@ import { Nav, NavItem } from 'reactstrap';
 
 import Search from './Search';
 import CPA from './CPA';
-import CategoryList from './CategoryList';
+import Categories from './Categories';
 
 class Filter extends React.Component {
   render() {
@@ -28,7 +28,7 @@ class Filter extends React.Component {
           <CPA onChange={onCpaChange} cpaMin={cpaMin} cpaMax={cpaMax} />
         </NavItem>
         <NavItem>
-          <CategoryList
+          <Categories
             data={categories}
             onSelect={onCategorySelect}
             activeCategories={activeCategories}

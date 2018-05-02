@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-class CategoryList extends React.Component {
+class Categories extends React.Component {
   render() {
     const {
       onSelect,
@@ -24,10 +24,10 @@ class CategoryList extends React.Component {
   }
 }
 
-CategoryList.propTypes = {
+Categories.propTypes = {
   onSelect: PropTypes.func.isRequired,
   data: PropTypes.array.isRequired,
   activeCategories: PropTypes.array.isRequired,
 };
 
-export default CategoryList;
+export default Categories;
