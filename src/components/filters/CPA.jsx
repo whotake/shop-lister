@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Form, FormGroup, Input, Col } from 'reactstrap';
+import { Input } from 'reactstrap';
 
 class CPA extends React.Component {
   render() {
