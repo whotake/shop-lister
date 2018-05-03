@@ -20,7 +20,7 @@ class Filter extends React.Component {
     } = this.props;
 
     return (
-      <Nav vertical>
+      <Nav vertical className="filters">
         <NavItem>
           <Search onSearch={onSearchInputChange} value={searchValue} />
         </NavItem>

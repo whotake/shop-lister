@@ -13,11 +13,14 @@ class List extends React.Component {
     return (
       <React.Fragment>
         {
-          data.map(item => (
+          data.length > 0 && data.map(item => (
             <Row className="mb-3">
               <Item shop={item} />
             </Row>
           ))
+        }
+        {
+          data.length === 0 && <h1 className="text-center">Ничего не найдено</h1>
         }
       </React.Fragment>
     );

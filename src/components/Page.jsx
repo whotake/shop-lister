@@ -119,10 +119,10 @@ class Page extends React.Component {
     return (
       <React.Fragment>
         <Row>
-          <Col md={8}>
+          <Col md={8} sm={6} xs={12}>
             <List data={this.state.data} />
           </Col>
-          <Col md={4}>
+          <Col md={4} sm={6} xs={12}>
             <Filter
               activeCategories={this.state.activeCategories}
               categories={categories}

@@ -13,7 +13,7 @@ class Item extends React.Component {
 
     return (
       <Card>
-        <CardImg top width="10%" src={shop.logo} alt={shop.name} />
+        <CardImg top width="10%" title={shop.name} src={shop.logo} alt={shop.name} />
         <CardBody>
           <CardTitle>{shop.name}</CardTitle>
           <CardSubtitle>
@@ -22,7 +22,7 @@ class Item extends React.Component {
           <CardSubtitle>
             <Badge color="warning" pill title="CPA" className="mt-3">{shop.cpa}</Badge>
           </CardSubtitle>
-          <Button className="mt-2">Перейти</Button>
+          <Button href={shop.deep_link} className="mt-2" title="Перейти">Перейти</Button>
         </CardBody>
       </Card>
     );

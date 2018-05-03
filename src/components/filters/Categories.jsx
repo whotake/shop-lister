@@ -14,6 +14,9 @@ class Categories extends React.Component {
 
     return (
       <div>
+        <span className="filter-title">
+            Категории
+        </span>
         {
           data.map(item => (
             <a href="#" className={cx('dropdown-item', { active: isActive(item) })} onClick={() => onSelect(item)}>{item.title}</a>

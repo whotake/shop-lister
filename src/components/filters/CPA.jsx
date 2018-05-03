@@ -11,30 +11,28 @@ class CPA extends React.Component {
     } = this.props;
 
     return (
-      <Form inline>
-        <FormGroup row>
-          <Col md={6}>
-            <Input
-              type="number"
-              name="cpaMin"
-              id="cpaMinimum"
-              placeholder="от"
-              value={cpaMin}
-              onChange={e => onChange(e.target.value)}
-            />
-          </Col>
-          <Col md={6}>
-            <Input
-              type="number"
-              name="cpaMax"
-              id="cpaMaximum"
-              placeholder="до"
-              value={cpaMax}
-              onChange={e => onChange(e.target.value, true)}
-            />
-          </Col>
-        </FormGroup>
-      </Form>
+      <React.Fragment>
+        <span className="filter-title">
+          CPA
+        </span>
+        <Input
+          type="number"
+          name="cpaMin"
+          id="cpaMinimum"
+          placeholder="от"
+          value={cpaMin}
+          onChange={e => onChange(e.target.value)}
+        />
+        <Input
+          className="mt-2"
+          type="number"
+          name="cpaMax"
+          id="cpaMaximum"
+          placeholder="до"
+          value={cpaMax}
+          onChange={e => onChange(e.target.value, true)}
+        />
+      </React.Fragment>
     );
   }
 }

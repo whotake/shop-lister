@@ -10,12 +10,17 @@ class Search extends React.Component {
     } = this.props;
 
     return (
-      <Input
-        type="text"
-        value={value}
-        placeholder="Поиск"
-        onChange={e => onSearch(e.target.value)}
-      />
+      <React.Fragment>
+        <span className="filter-title">
+            Название
+        </span>
+        <Input
+          type="text"
+          value={value}
+          placeholder="Поиск"
+          onChange={e => onSearch(e.target.value)}
+        />
+      </React.Fragment>
     );
   }
 }
